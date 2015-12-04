@@ -48,6 +48,8 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-datepicker-rails (1.5.0)
+      railties (>= 3.0)
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
@@ -221,7 +223,6 @@ GEM
     simple_form (3.2.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
-    simple_form_bootstrap_datepicker (0.0.1)
     spring (1.4.0)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -257,6 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
+  bootstrap-datepicker-rails
   bootstrap-sass
   byebug
   capybara
@@ -288,7 +290,6 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers
   simple_form
-  simple_form_bootstrap_datepicker
   spring
   spring-commands-rspec
   turbolinks
