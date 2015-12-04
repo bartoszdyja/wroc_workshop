@@ -221,6 +221,7 @@ GEM
     simple_form (3.2.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
+    simple_form_bootstrap_datepicker (0.0.1)
     spring (1.4.0)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
@@ -287,6 +288,7 @@ DEPENDENCIES
   selenium-webdriver
   shoulda-matchers
   simple_form
+  simple_form_bootstrap_datepicker
   spring
   spring-commands-rspec
   turbolinks
