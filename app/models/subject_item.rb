@@ -8,4 +8,9 @@ class SubjectItem < ActiveRecord::Base
   validates :title, presence: true
 
   scope :not_assigned_or_assigned_to_teacher, -> (teacher) { where('teacher_id IS ? or teacher_id = ?', nil, teacher) }
+
+  def to_partial_path
+    'reports/subject_item'
+  end
+
 end
