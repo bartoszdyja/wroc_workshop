@@ -4,13 +4,17 @@ Rails.application.routes.draw do
 
   resources :visitors
 
-  resources :teachers
-
-  namespace :reports, as: 'report' do
+  resources :teachers do
     get :subjects
   end
   
   resources :students do
     get :subjects
   end
+
+  namespace :reports, as: 'report' do
+    get :subjects
+  end
+  
+  
 end
