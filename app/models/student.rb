@@ -5,7 +5,13 @@ class Student < ActiveRecord::Base
 
   has_one :account, dependent: :destroy
 
-  accepts_nested_attributes_for :subject_items 
+  accepts_nested_attributes_for :subject_items
+
+  #after_create :initialize_account 
 
   validates :first_name, :last_name, presence: true
+
+  def initialize_account
+    Account.create!
+  end
 end
