@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   namespace :reports, as: 'report' do
     get :subjects
+    get :accounts
   end
   
   
