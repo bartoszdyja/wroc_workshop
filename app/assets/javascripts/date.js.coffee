@@ -6,3 +6,5 @@ $ ->
       format: 'yyyy-mm-dd',
       defaultViewDate: { year: 1960}
   )
+  
+  $('.datatable').DataTable {}
