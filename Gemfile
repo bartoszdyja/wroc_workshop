@@ -21,7 +21,7 @@ gem 'dotenv-rails'
 gem 'gretel'
 gem 'bootstrap-datepicker-rails'
 gem 'jquery-turbolinks'
-gem 'jquery-datatables-rails', '~> 3.3.0'
+gem 'jquery-datatables-rails', github: "rweng/jquery-datatables-rails", branch: "master"
 
 group :development do
   gem 'better_errors'
