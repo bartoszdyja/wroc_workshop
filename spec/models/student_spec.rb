@@ -20,4 +20,12 @@ RSpec.describe Student do
   describe 'nested attributes' do
     it { should accept_nested_attributes_for :subject_items }
   end
+
+  describe 'callbacks' do
+    it 'should create account' do
+      @student = Student.new(first_name: 'a', last_name: 'b')
+      expect(@student).to receive(:initialize_account)
+      @student.save
+    end
+  end
 end

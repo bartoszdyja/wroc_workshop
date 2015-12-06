@@ -46,6 +46,11 @@ RSpec.describe StudentsController do
       it 'creates student' do
         expect{ subject }.to change(Student, :count).by(1)
       end
+
+      it 'creates default account' do
+        expect{ subject }.to change(Account, :count).by(1)
+      end
+
     end
 
     context 'failure' do

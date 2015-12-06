@@ -15,4 +15,9 @@ feature 'User checks student details' do
       expect(page).to have_content 'RoR Workhops » Students » Jan Nowak'
     end
   end
+
+  it 'is valid without date' do
+    expect(student).to be_valid
+  end
+  
 end

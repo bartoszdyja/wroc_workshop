@@ -13,6 +13,26 @@ feature 'User creates student' do
     fill_in 'Last name', with: 'Nowacki'
     click_button 'Create Student'
     expect(page).to have_content 'Student has been created!'
+    end
+
+  context 'with valid name and birthdate' do
+    before do
+      fill_in 'First name', with: 'Adrian'
+      fill_in 'Last name', with: 'Nowacki'
+      fill_in 'Birthdate', with: '2010-01-01'
+      click_button 'Create Student'
+    end
+    
+    it 'creates student' do
+      expect(page).to have_content 'Student has been created!'
+      expect(page).to have_content '2010-01-01'
+    end
+
+    it 'creates default acccount' do
+      visit report_accounts_path
+      expect(page).to have_content 'Adrian'
+      expect(page).to have_content Date.today+1.month
+    end
   end
 
   scenario 'with missing first name' do
