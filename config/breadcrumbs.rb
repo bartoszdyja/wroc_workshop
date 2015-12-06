@@ -35,5 +35,5 @@ crumb :subjects do
 end
 
 crumb :accounts do
-  link t('navbar.reports_account'), report_accounts_path
+  link t('navbar.reports_accounts'), report_accounts_path
 end
