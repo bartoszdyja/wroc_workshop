@@ -22,6 +22,7 @@ gem 'gretel'
 gem 'bootstrap-datepicker-rails'
 gem 'jquery-turbolinks'
 gem 'jquery-datatables-rails', github: "rweng/jquery-datatables-rails", branch: "master"
+gem 'faker'
 
 group :development do
   gem 'better_errors'
@@ -35,7 +36,6 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'rspec-rails'
   gem 'spring'
   gem 'web-console', '~> 2.0'
